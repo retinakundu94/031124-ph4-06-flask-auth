@@ -1,10 +1,10 @@
-function UserDetails({currentUser}) {
+function UserDetails({currentUser, setCurrentUser}) {
 
     return (
       <div className='user-details'>
         <h2>Welcome {currentUser.username}!</h2>
-        <button>Logout</button>
-      </div>
+        <button onClick={() => setCurrentUser(null)}>Logout</button>     
+        </div>
     )
   
   }
